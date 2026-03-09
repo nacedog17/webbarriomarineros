@@ -1,0 +1,220 @@
+/* =======================================================
+   ESTILOS PARA LA WEB DE LA ASOCIACIÓN (MF0952_2)
+   Barrio de los Marineros - Actualizado
+   ======================================================= */
+
+/* RESET Y GENERAL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #1a1a1a; background-color: #ffffff; scroll-behavior: smooth; }
+
+/* HEADER */
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; border-bottom: 4px solid #004a99; position: sticky; top: 0; background: white; z-index: 1000; }
+.logo img { height: 70px; }
+nav ul { list-style: none; display: flex; align-items: center; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: #000; font-weight: bold; transition: 0.3s; }
+nav ul li a:hover { color: #004a99; }
+
+/* Iconos redes en header */
+.redes-header { margin-left: 20px; display: flex; gap: 15px; }
+.redes-header a { font-size: 1.3rem; color: #004a99; transition: 0.3s; }
+.redes-header a:hover { transform: translateY(-2px); color: #003366; }
+
+/* HERO */
+.hero { text-align: center; padding: 100px 20px; background: linear-gradient(180deg, #ffffff 0%, #cce5ff 100%); }
+.hero h1 { font-size: 2.5rem; color: #003366; margin-bottom: 15px; }
+.btn-principal { display: inline-block; margin-top: 25px; padding: 15px 35px; background-color: #004a99; color: white; text-decoration: none; font-weight: bold; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,74,153,0.3); transition: 0.3s; }
+.btn-principal:hover { transform: translateY(-3px); background-color: #003366; }
+
+/* PROYECTOS (Ajustado para el barco vertical) */
+.proyectos { padding: 60px 5%; background-color: #fcfcfc; }
+.titulo-seccion { text-align: center; color: #003366; font-size: 2.2rem; margin-bottom: 40px; }
+.contenedor-proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+.proyecto-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border: 1px solid #eee; }
+.proyecto-img { width: 100%; height: 450px; background-color: #f9f9f9; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+.proyecto-img img { height: 100%; width: auto; object-fit: contain; padding: 15px; }
+.proyecto-info { padding: 20px; }
+.proyecto-info h3 { color: #004a99; margin-bottom: 10px; }
+.etiqueta { display: inline-block; padding: 5px 12px; background: #e0f2ff; color: #004a99; border-radius: 5px; font-size: 0.8rem; font-weight: bold; }
+
+/* LOTERÍA */
+.loteria { max-width: 800px; margin: 40px auto; padding: 30px; background-color: #f0f7ff; text-align: center; border: 2px dashed #004a99; border-radius: 15px; }
+.info-loteria { background: white; padding: 15px; display: inline-block; border-radius: 10px; margin-top: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+/* HAZTE SOCIO */
+.seccion-socio { padding: 80px 20px; text-align: center; }
+.pasos-socio { display: flex; justify-content: center; gap: 40px; margin: 30px 0; }
+.paso i { color: #004a99; font-size: 2rem; margin-bottom: 10px; }
+.btn-secundario { display: inline-block; padding: 12px 25px; border: 2px solid #004a99; color: #004a99; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+.btn-secundario:hover { background-color: #004a99; color: white; }
+
+/* FOOTER */
+footer { background-color: #222; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; border-top: 5px solid #004a99; }
+.redes-footer { display: flex; justify-content: center; gap: 30px; margin: 20px 0; }
+.redes-footer a { color: white; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+
+/* BOTONERA FLOTANTE */
+.contacto-flotante { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 12px; z-index: 9999; }
+.btn-circular { width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: 0.3s; }
+.btn-circular:hover { transform: scale(1.1); }
+.btn-llamada { background-color: #004a99; }
+.btn-whatsapp { background-color: #25d366; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header { flex-direction: column; padding: 20px; }
+    nav ul { margin-top: 15px; flex-wrap: wrap; justify-content: center; }
+    .hero h1 { font-size: 1.8rem; }
+    .proyecto-img { height: 350px; }
+    .pasos-socio { flex-direction: column; gap: 20px; }
+    .btn-circular { width: 50px; height: 50px; font-size: 20px; }
+}
+/* ESTILOS ESPECÍFICOS PÁGINA NOTICIAS */
+.titulo-pagina{
+    color:#003366 ;
+    text-align: center;
+}
+.seccion-noticias {
+    padding: 60px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor-noticias {
+    display: grid;
+    gap: 30px;
+}
+
+.noticia-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.noticia-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.fecha-noticia {
+    color: #004a99;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.noticia-card h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.noticia-card p {
+    color: #333;
+}
+/**.noticia-cuerpo img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 20px;
+}**/
+.noticia-card {
+display: flex;
+flex-direction: row;
+background: white;
+margin-bottom: 30px;
+border: 1px solid #eee;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.imagen-noticia {
+flex: 0 0 35%;
+background: #f4f4f4;
+}
+
+.imagen-noticia img {
+width: 100%;
+height: 400px;
+object-fit: contain;
+display: block;
+}
+
+.contenido-noticia {
+flex: 1;
+padding: 20px;
+}
+
+/* Ajuste para el enlace activo en el nav */
+nav ul li a.active {
+    color: #004a99;
+    border-bottom: 2px solid #004a99;
+}
+/* =======================================================
+   ESTILOS PARA HISTORIA
+   ======================================================= */
+
+.contenedor-historia {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bloque-historia {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.bloque-historia.inverso {
+    flex-direction: row-reverse;
+}
+
+.texto-historia {
+    flex: 1;
+}
+
+.texto-historia h2 {
+    color: #004a99;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cce5ff;
+    display: inline-block;
+}
+
+.texto-historia p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.imagen-historia {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.imagen-historia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(30%); /* Toque nostálgico */
+    transition: 0.5s;
+}
+
+.imagen-historia img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Responsive para historia */
+@media (max-width: 768px) {
+    .bloque-historia, .bloque-historia.inverso {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
